@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  height: auto;
+  width: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url("assets/backdrop.jpg");
+  padding: 50px;
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+
+.col input {
+  margin: 15px;
+  max-height: 40px;
+}
+
+.left {
+  padding: 10px;
+  color: white;
+}
+
+.left h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
+}
+
+.left p {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.right {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  box-shadow: 6px 6px 12px #c5c5c5, -4px -4px 10px #ffffff;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 550px;
+  height: max-content;
+  padding: 60px;
+}
+
+.right h1{
+  font-size: 30px;
+}
+
+.right p{
+  font-size: 15px;
+}
+
+.right p a, .left p a {
+  text-decoration: none;
+  color: black;
+}
+
+.col {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 80px;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+button {
+  border: none;
+  color: #090909;
+  padding: 10px 20px;
+  font-size: 10px !important;
+  border-radius: 30px !important;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -4px -4px 10px #ffffff;
+  float: right;
+}
+
+button:hover {
+  background-color: rgb(121, 20, 20);
+  color: white;
+  box-shadow: none;
+}
+
+button:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+}

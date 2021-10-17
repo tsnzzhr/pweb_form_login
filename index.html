@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BudakKorporat.id</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="right">
+            <h3><b>Sign in to Continue..</b></h3>
+            <form
+              autocomplete="off"
+              name="form"
+              onsubmit="return validateForm();"
+            >
+              <div class="form-content">
+                <input
+                  type="text"
+                  id="person"
+                  name="person"
+                  placeholder="Email or Username"
+                  class="form-control"
+                  maxlength="20"
+                />
+              </div>
+              <div class="form-content">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  class="form-control"
+                  minlength="8"
+                />
+                <input type="checkbox" onclick="myFunction()" />Show Password
+              </div>
+              <div class="icons">
+                <p>
+                  <b><a href="#">Forgot Password?</a></b>
+                </p>
+                <p>or Sign in Using Integrated App Below..</p>
+                <div class="icon">
+                  <a href="#"
+                    ><img src="assets/038-github.png" height="64px" width="64px"
+                  /></a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img
+                      src="assets/045-linkedin.png"
+                      height="64px"
+                      width="64px"
+                  /></a>
+                </div>
+                <div class="icon">
+                  <a href="#"
+                    ><img src="assets/gmail.png" height="72px" width="72px"
+                  /></a>
+                </div>
+              </div>
+              <p>
+                Have No Account Yet? <b><a href="#">Create a New One..</a></b>
+              </p>
+            <button type="submit">Submit</button>
+            </form>
+            
+          </div>
+        </div>
+        <div class="col">
+          <div class="left">
+            <h1><b>BudakKorporat.id</b></h1>
+            <p>
+              Shout Out to All Jobless Graduates, It's Your Time to Find a Dream
+              Job! Get a Kickstart to Be So Darn Rich Workaholic Through Being Such Budak
+              Korporat!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+
+      function validateForm() {
+        if (document.forms["form"]["person"].value == "") {
+          alert("Invalid Email or Username.");
+          document.forms["form"]["person"].focus();
+          return false;
+        }
+        if (document.forms["form"]["password"].value == "") {
+            alert("Invalid Password.");
+            document.forms["form"]["password"].focus();
+            return false;
+        }  
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
